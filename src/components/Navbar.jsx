@@ -29,7 +29,9 @@ export const Navbar = () => {
     }, [windowWidth]);
   return (
     <div className='navbar_container'>
-        <div className='logo_container'></div>
+        <div className='logo_container'>
+          <p className='logo_text'>e-Shop</p>
+        </div>
         <div className='links_container '>{!isSmallScreen ? (<>
             <Link to="/" className='hover-underline-animation'>Shop</Link> 
             <Link to="/cart" className='hover-underline-animation'>Cart</Link></>) : (<><img src={toggle ? close : menu} alt="" onClick = {() => {setToggle(!toggle)}} className = "menu-icon"/>
